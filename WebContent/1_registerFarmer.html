@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="ISO-8859-1">
+  <title>Register Farmer - DigiMarket</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      background: linear-gradient(to right, #f1f8e9, #e0f7fa);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .register-box {
+      background: white;
+      padding: 40px 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      width: 480px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #2e7d32;
+      margin-bottom: 25px;
+      font-size: 30px;
+      text-shadow: 1px 1px #c8e6c9;
+    }
+
+    .icon-label {
+      font-size: 15px;
+      color: #444;
+      text-align: left;
+      margin-top: 12px;
+      margin-bottom: 4px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"] {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      padding: 12px;
+      background-color: #388e3c;
+      border: none;
+      color: white;
+      font-size: 17px;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #2e7d32;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 15px;
+      font-size: 14px;
+      color: #2e7d32;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #1b5e20;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="register-box">
+    <h2><i class="fas fa-tractor"></i> Farmer Registration</h2>
+    <form action="RegFarmer" method="post">
+
+      <div class="icon-label"><i class="fas fa-user"></i> Farmer Name</div>
+      <input type="text" name="farmerName" placeholder="Enter your name" required>
+
+      <div class="icon-label"><i class="fas fa-map-marker-alt"></i> Location</div>
+      <input type="text" name="farmerLocation" placeholder="Village/City" required>
+
+      <div class="icon-label"><i class="fas fa-phone"></i> Contact</div>
+      <input type="text" name="farmerContact" placeholder="Mobile number" required>
+
+      <div class="icon-label"><i class="fas fa-envelope"></i> Email</div>
+      <input type="email" name="farmerEmail" placeholder="Enter your email" required>
+
+      <div class="icon-label"><i class="fas fa-lock"></i> Password</div>
+      <input type="password" name="farmerPassword" placeholder="Create a password" required>
+
+      <input type="submit" value="Register">
+
+      <a href="3_farmerLogin.jsp"><i class="fas fa-sign-in-alt"></i> Already have an account? Login</a><br>
+      <a href="index.html"><i class="fas fa-home"></i> Back to Home Page</a>
+    </form>
+  </div>
+</body>
+</html>
